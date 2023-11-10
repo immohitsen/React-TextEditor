@@ -22,7 +22,7 @@ function App() {
   }
   return (
     <>
-      <Navbar title="The Logicgen" mode={mode} toggleMode={toggleMode} />
+      <Navbar title="Text Editor" mode={mode} toggleMode={toggleMode} />
       <div className="container my-5 ">
         <TextForm heading="Enter Text to analyze" mode={mode}/>
         {/* <AboutUs/> */}
