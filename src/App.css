@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+.alert{
+  position: fixed;
+  width: 100%;
+}
+
+.container{
+  margin-top: 10vh;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
