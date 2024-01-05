@@ -42,8 +42,8 @@ function App() {
       <Navbar title="ScriptHub" mode={mode} toggleMode={toggleMode} />
       <Alert className="alert" alert={alert}/>
       <div className="container my-5 ">
-        {/* <TextForm showAlert={showAlert} heading="Enter Text to analyze" mode={mode}/> */}
-        <AboutUs/>
+        <TextForm showAlert={showAlert} heading="Enter Text to analyze" mode={mode}/>
+        {/* <AboutUs/> */}
       </div>
     </>
   );
