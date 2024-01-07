@@ -6,6 +6,13 @@ import AboutUs from './components/AboutUs';
 import React, { useState } from 'react';
 import Alert from './components/Alert';
 
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+} from "react-router-dom";
+
 
 function App() {
   const [mode, setMode] = useState('light');
@@ -39,12 +46,16 @@ function App() {
   }
   return (
     <>
+    <BrowserRouter>
       <Navbar title="ScriptHub" mode={mode} toggleMode={toggleMode} />
       <Alert className="alert" alert={alert}/>
       <div className="container my-5 ">
-        <TextForm showAlert={showAlert} heading="Enter Text to analyze" mode={mode}/>
-        {/* <AboutUs/> */}
+      <Routes>
+          <Route exact path="/about" element={<AboutUs mode={mode}/>} />
+          <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter Text to analyze" mode={mode}/>} />
+      </Routes>
       </div>
+      </BrowserRouter>
     </>
   );
 }
