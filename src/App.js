@@ -52,7 +52,7 @@ function App() {
       <div className="container my-5 ">
       <Routes>
           <Route exact path="/about" element={<AboutUs mode={mode}/>} />
-          <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter Text to analyze" mode={mode}/>} />
+          <Route exact path="/ScriptHub" element={<TextForm showAlert={showAlert} heading="Enter Text to analyze" mode={mode}/>} />
       </Routes>
       </div>
       </BrowserRouter>
